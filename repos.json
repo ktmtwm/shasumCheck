@@ -1,0 +1,11 @@
+{
+	"fis": {
+		"url" : "https://github.com/fis-dev/fis"
+	},
+	"fis-kernel":{
+		"url" : "https://github.com/fis-dev/fis-kernel"
+	},
+	"fis-command-install":{
+		"url" : "https://github.com/fis-dev/fis-command-install"
+	}
+}
