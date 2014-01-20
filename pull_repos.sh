@@ -7,8 +7,10 @@ repos_url=([fis]=https://github.com/fis-dev/fis	[fis-kernel]=https://github.com/
 for repo in TOTALrepos
 do
 	if [-d "${ROOT}/${repo}"] #目录存在
+	echo repo
 		cd ${ROOT}/${repo}
 		git pull repos_url[${repo}]
 	else
+		cd ${ROOT}
 		git clone repos_url[${repo}]
 done
