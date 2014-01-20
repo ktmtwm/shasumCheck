@@ -1,5 +1,6 @@
  <?php
     $ROOT = str_replace('\\', '/', dirname(__FILE__));
+    $ROOT_url = "10.48.30.87:8088/fis2.0_shasumCheck/";
     require_once $ROOT . '/libs/smarty-3.1.5/Smarty.class.php';
     require_once $ROOT . '/File.class.php';
 
@@ -45,7 +46,7 @@
             $shasum = substr($h[0], 2);
 
             $repos[$key][$isDiff] = 0;
-            $repos[$key][$url] = $ROOT."/result/detail_".$key.".html";
+            $repos[$key][$url] = $ROOT_url."/result/detail_".$key.".html";
             if( isset($shasum_local[$v]['shasum']) )
             {
                 if( $shasum_local[$v]['shasum']==$shasum ){
