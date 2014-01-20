@@ -8,7 +8,7 @@ for repo in TOTALrepos
 do
 	if [-d "${ROOT}/${repo}"] #目录存在
 		cd ${ROOT}/${repo}
-		git pull
+		git pull repos_url[${repo}]
 	else
 		git clone repos_url[${repo}]
 done
