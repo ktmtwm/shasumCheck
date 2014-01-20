@@ -30,10 +30,11 @@
     <td>{$name}</td>
 
     {if ($repo[$isDiff]==0)}
-  	     <td>√√√√√√</td>
-    {else}
+  	     <td><a href="{$repo[$url]}">√√√√√√</a></td>
+    {elseif ($repo[$isDiff]==1)}
         <td><a href="{$repo[$url]}"> XXXXXX</a></td>
-    
+    {else}
+        <td>NULL</td>
     {/if}
 
   </tr>

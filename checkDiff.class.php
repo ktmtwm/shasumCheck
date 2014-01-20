@@ -27,8 +27,12 @@
         $data = file_get_contents( $u );
         preg_match_all("/\"dist\":{.*.tgz\"}/U", $data, $match);
 
-        // $shasum_npm = array();
-        $shasum_local = file_get_contents($ROOT . '/repo_source/' . $key . '/shasum.json');
+        $file = $ROOT . '/repo_source/' . $key . '/shasum.json';
+        if( !file_exists($file) ) {
+            $repos[$key][$isDiff]  = -2;
+            continue;
+        }
+        $shasum_local = file_get_contents($file);
         $shasum_local = json_decode($shasum_local, true);
         #string dist:{} to key=version => value=shasum
         foreach ($match[0] as $i => $dist) {
@@ -41,7 +45,7 @@
             $shasum = substr($h[0], 2);
 
             $repos[$key][$isDiff] = 0;
-            $repos[$key][$url] = $ROOT."/result/fail_".$key.".html";
+            $repos[$key][$url] = $ROOT."/result/detail_".$key.".html";
             if( isset($shasum_local[$v]['shasum']) )
             {
                 if( $shasum_local[$v]['shasum']==$shasum ){
@@ -54,13 +58,12 @@
         }
     }
 
-    $repos['fis'][$isDiff] = 1;
     $smarty->assign('repos', $repos);
 
     foreach ($repos as $key => $repo) {
-        if ($repo[$isDiff]==1) {
+        if ($repo[$isDiff]==1 || $repo[$isDiff]==0) {
             $smarty->assign('name', $key);
-            $html = $smarty->fetch($ROOT."/result/fail.tpl");
+            $html = $smarty->fetch($ROOT."/result/detail.tpl");
             File::write($repo[$url],$html);
         }
     }
