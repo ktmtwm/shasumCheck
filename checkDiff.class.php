@@ -73,7 +73,7 @@
     $smarty->assign('main_page', $main_page);
     $html_ = $smarty->fetch($ROOT."/result/checkList.tpl");
     // echo $html;
-    File::write($main_page,$html_);
+    File::write($ROOT."/result/checkList.html",$html_);
 
     // //展示文件内容的不同
     // $this->DisplayDetails();
