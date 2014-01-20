@@ -59,6 +59,8 @@
         }
     }
 
+    $main_page = $ROOT_url."/result/checkList.html";
+    $smarty->assign('main_page', $main_page);
     $smarty->assign('repos', $repos);
 
     foreach ($repos as $key => $repo) {
@@ -69,8 +71,6 @@
         }
     }
 
-    $main_page = $ROOT_url."/result/checkList.html";
-    $smarty->assign('main_page', $main_page);
     $html_ = $smarty->fetch($ROOT."/result/checkList.tpl");
     // echo $html;
     File::write($ROOT."/result/checkList.html",$html_);
