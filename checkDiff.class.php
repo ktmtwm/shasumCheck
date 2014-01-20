@@ -69,7 +69,7 @@
         }
     }
 
-    $main_page = $ROOT."/result/checkList.html";
+    $main_page = $ROOT_url."/result/checkList.html";
     $smarty->assign('main_page', $main_page);
     $html_ = $smarty->fetch($ROOT."/result/checkList.tpl");
     // echo $html;
