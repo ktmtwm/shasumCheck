@@ -65,7 +65,7 @@
         if ($repo[$isDiff]==1 || $repo[$isDiff]==0) {
             $smarty->assign('name', $key);
             $html = $smarty->fetch($ROOT."/result/detail.tpl");
-            File::write($ROOT."/result/datil_".$key.".html",$html);
+            File::write($ROOT."/result/detail_".$key.".html",$html);
         }
     }
 
