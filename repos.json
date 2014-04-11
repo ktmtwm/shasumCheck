@@ -8,4 +8,7 @@
 	"fis-command-install":{
 		"url" : "https://github.com/fis-dev/fis-command-install"
 	}
+	"ci-test"{
+		"url" : "https://github.com/xiangshouding/ci-test"
+	}
 }

@@ -4,14 +4,14 @@
     require_once $ROOT . '/libs/smarty-3.1.5/Smarty.class.php';
     require_once $ROOT . '/File.class.php';
 
-
     $smarty = new Smarty();
     $smarty->setTemplateDir('/result');
 
     $config = array(
         'fis' => 'http://registry.npmjs.org/fis',
         'fis-kernel' => 'http://registry.npmjs.org/fis-kernel',
-        'fis-command-install' => 'http://registry.npmjs.org/fis-command-install'
+        'fis-command-install' => 'http://registry.npmjs.org/fis-command-install',
+        'ci-test' => 'https://github.com/xiangshouding/ci-test'
     );
     #two dimensional array
     $repos = array();
@@ -47,9 +47,9 @@
 
             $repos[$key][$isDiff] = 0;
             $repos[$key][$url] = $ROOT_url."/result/detail_".$key.".html";
-            if( isset($shasum_local[$v]['shasum']) )
+            if( isset($shasum_local[$key+'@'+$v]['shasum']) )
             {
-                if( $shasum_local[$v]['shasum']==$shasum ){
+                if( $shasum_local[$key+'@'+$v]['shasum']==$shasum ){
                     $repos[$key][$versions][$v] = 0;
                 }else{
                     $repos[$key][$versions][$v] = 1;
