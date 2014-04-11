@@ -3,43 +3,43 @@ ROOT=/home/work/repos/fis2.0_shasumCheck/repo_source
 cd ${ROOT}
 rm -rf *
 
-FIS=https://github.com/fex-team/fis/blob/master/shasum.json
+FIS=https://raw.githubusercontent.com/fex-team/fis/master/shasum.json
 FIS_DIR=${ROOT}/fis
 
-FIS_KERNEL=https://github.com/fex-team/fis-kernel/blob/master/shasum.json
+FIS_KERNEL=https://raw.githubusercontent.com/fex-team/fis-kernel/master/shasum.json
 FIS_KERNNEL_DIR=${ROOT}/fis-kernel
 
-FIS_PLUS=https://github.com/fex-team/fis-plus/blob/master/shasum.json
+FIS_PLUS=https://raw.githubusercontent.com/fex-team/fis-plus/master/shasum.json
 FIS_PLUS_DIR=${ROOT}/fis-plus
 
-FIS_COMMAND_SERVER=https://github.com/fex-team/fis-command-server/blob/master/shasum.json
+FIS_COMMAND_SERVER=https://raw.githubusercontent.com/fex-team/fis-command-server/master/shasum.json
 FIS_COMMAND_SERVER_DIR=${ROOT}/fis-command-server
 
-FIS_COMMAND_RELEASE=https://github.com/fex-team/fis-command-release/blob/master/shasum.json
+FIS_COMMAND_RELEASE=https://raw.githubusercontent.com/fex-team/fis-command-release/master/shasum.json
 FIS_COMMAND_RELEASE_DIR=${ROOT}/fis-command-release
 
-FIS_COMMAND_INSTALL=https://github.com/fex-team/fis-command-install/blob/master/shasum.json
+FIS_COMMAND_INSTALL=https://raw.githubusercontent.com/fex-team/fis-command-install/master/shasum.json
 FIS_COMMAND_INSTALL_DIR=${ROOT}/fis-command-install
 
-FIS_SPRITER_CSSSPRITES=https://github.com/fex-team/fis-spriter-csssprites/blob/master/shasum.json
+FIS_SPRITER_CSSSPRITES=https://raw.githubusercontent.com/fex-team/fis-spriter-csssprites/master/shasum.json
 FIS_SPRITER_CSSSPRITES_DIR=${ROOT}/fis-spriter-csssprites
 
-FIS_OPTIMIZER_CLEAN_CSS=https://github.com/fex-team/fis-optimizer-clean-css/blob/master/shasum.json
+FIS_OPTIMIZER_CLEAN_CSS=https://raw.githubusercontent.com/fex-team/fis-optimizer-clean-css/master/shasum.json
 FIS_OPTIMIZER_CLEAN_CSS_DIR=${ROOT}/fis-optimizer-clean-css
 
-FIS_OPTIMIZER_UGLIFY_JS=https://github.com/fex-team/fis-optimizer-uglify-js/blob/master/shasum.json
+FIS_OPTIMIZER_UGLIFY_JS=https://raw.githubusercontent.com/fex-team/fis-optimizer-uglify-js/master/shasum.json
 FIS_OPTIMIZER_UGLIFY_JS_DIR=${ROOT}/fis-optimizer-uglify-js
 
-FIS_POSTPROCESSOR_JSWRAPPER=https://github.com/fex-team/fis-postprocessor-jswrapper/blob/master/shasum.json
+FIS_POSTPROCESSOR_JSWRAPPER=https://raw.githubusercontent.com/fex-team/fis-postprocessor-jswrapper/master/shasum.json
 FIS_POSTPROCESSOR_JSWRAPPER_DIR=${ROOT}/fis-postprocessor-jswrapper
 
-FIS_PACKAGER_MAP=https://github.com/fex-team/fis-packager-map/blob/master/shasum.json
+FIS_PACKAGER_MAP=https://raw.githubusercontent.com/fex-team/fis-packager-map/master/shasum.json
 FIS_PACKAGER_MAP_DIR=${ROOT}/fis-packager-map
 
-FIS_OPTIMIZER_PNG_COMPRESSOR=https://github.com/fex-team/fis-oprimizer-png-compressor/blob/master/shasum.json
+FIS_OPTIMIZER_PNG_COMPRESSOR=https://raw.githubusercontent.com/fex-team/fis-oprimizer-png-compressor/master/shasum.json
 FIS_OPTIMIZER_PNG_COMPRESSOR_DIR=${ROOT}/fis-oprimizer-png-compressor
 
-CI_TEST=https://github.com/xiangshouding/ci-test/blob/master/shasum.json
+CI_TEST=https://raw.githubusercontent.com/xiangshouding/ci-test/master/shasum.json
 CI_TEST_DIR=${ROOT}/ci-test
 
 mkdir ${FIS_DIR}
