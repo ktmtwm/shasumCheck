@@ -56,9 +56,9 @@
 
             $repos[$key][$isDiff] = 0;
             $repos[$key][$url] = $ROOT_url."/result/detail_".$key.".html";
-            if( isset($shasum_local[$key+'@'+$v]['shasum']) )
+            if( isset($shasum_local[$key.'@'.$v]['shasum']) )
             {
-                if( $shasum_local[$key+'@'+$v]['shasum']==$shasum ){
+                if( $shasum_local[$key.'@'.$v]['shasum']==$shasum ){
                     $repos[$key][$versions][$v] = 0;
                 }else{
                     $repos[$key][$versions][$v] = 1;
