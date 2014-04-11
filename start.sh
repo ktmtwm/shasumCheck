@@ -1,7 +1,7 @@
 #parameters
 ROOT=/home/work/repos/fis2.0_shasumCheck
 
-cd ROOT
+cd ${ROOT}
 sh pull_repos.sh
 
 rm -rf result/*.html

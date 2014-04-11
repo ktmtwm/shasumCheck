@@ -10,7 +10,17 @@
     $config = array(
         'fis' => 'http://registry.npmjs.org/fis',
         'fis-kernel' => 'http://registry.npmjs.org/fis-kernel',
-        'ci-test' => 'https://github.com/xiangshouding/ci-test'
+        'fis-plus' => 'http://registry.npmjs.org/fis-plus',
+        'fis-command-server' => 'http://registry.npmjs.org/fis-command-server',
+        'fis-command-release' => 'http://registry.npmjs.org/fis-command-release',
+        'fis-command-install' => 'http://registry.npmjs.org/fis-command-install',
+        'fis-spriter-csssprites' => 'http://registry.npmjs.org/fis-spriter-csssprites',
+        'fis-optimizer-clean-css' => 'http://registry.npmjs.org/fis-optimizer-clean-css',
+        'fis-optimizer-uglify-js' => 'http://registry.npmjs.org/fis-optimizer-uglify-js',
+        'fis-postprocessor-jswrapper' => 'http://registry.npmjs.org/fis-postprocessor-jswrapper',
+        'fis-packager-map' => 'http://registry.npmjs.org/fis-packager-map',
+        'fis-optimizer-png-compressor' => 'http://registry.npmjs.org/fis-optimizer-png-compressor',
+        'ci-test' => 'https://registry.npmjs.org/ci-test'
     );
     #two dimensional array
     $repos = array();
