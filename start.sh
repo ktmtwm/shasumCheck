@@ -1,5 +1,5 @@
 #parameters
-ROOT=home/work/repos/fis2.0_shasumCheck
+ROOT=/home/work/repos/fis2.0_shasumCheck
 
 cd ROOT
 sh pull_repos.sh
