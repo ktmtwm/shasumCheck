@@ -44,52 +44,52 @@ CI_TEST_DIR=${ROOT}/ci-test
 
 mkdir ${FIS_DIR}
 cd ${FIS_DIR}
-wget ${FIS} --no-check-certificate
+wget ${FIS} --no-check-certificate --timeout=600
 
 mkdir ${FIS_KERNEL_DIR}
 cd ${FIS_KERNEL_DIR}
-wget ${FIS_KERNEL} --no-check-certificate
+wget ${FIS_KERNEL} --no-check-certificate --timeout=600
 
 mkdir ${FIS_PLUS_DIR}
 cd ${FIS_PLUS_DIR}
-wget ${FIS_PLUS} --no-check-certificate
+wget ${FIS_PLUS} --no-check-certificate --timeout=600
 
 mkdir ${FIS_COMMAND_SERVER_DIR}
 cd ${FIS_COMMAND_SERVER_DIR}
-wget ${FIS_COMMAND_SERVER} --no-check-certificate
+wget ${FIS_COMMAND_SERVER} --no-check-certificate --timeout=600
 
 mkdir ${FIS_COMMAND_RELEASE_DIR}
 cd ${FIS_COMMAND_RELEASE_DIR}
-wget ${FIS_COMMAND_RELEASE} --no-check-certificate
+wget ${FIS_COMMAND_RELEASE} --no-check-certificate --timeout=600
 
 mkdir ${FIS_COMMAND_INSTALL_DIR}
 cd ${FIS_COMMAND_INSTALL_DIR}
-wget ${FIS_COMMAND_INSTALL} --no-check-certificate
+wget ${FIS_COMMAND_INSTALL} --no-check-certificate --timeout=600
 
 mkdir ${FIS_SPRITER_CSSSPRITES_DIR}
 cd ${FIS_SPRITER_CSSSPRITES_DIR}
-wget ${FIS_SPRITER_CSSSPRITES} --no-check-certificate
+wget ${FIS_SPRITER_CSSSPRITES} --no-check-certificate --timeout=600
 
 mkdir ${FIS_OPTIMIZER_CLEAN_CSS_DIR}
 cd ${FIS_OPTIMIZER_CLEAN_CSS_DIR}
-wget ${FIS_OPTIMIZER_CLEAN_CSS} --no-check-certificate
+wget ${FIS_OPTIMIZER_CLEAN_CSS} --no-check-certificate --timeout=600
 
 mkdir ${FIS_OPTIMIZER_UGLIFY_JS_DIR}
 cd ${FIS_OPTIMIZER_UGLIFY_JS_DIR}
-wget ${FIS_OPTIMIZER_UGLIFY_JS} --no-check-certificate
+wget ${FIS_OPTIMIZER_UGLIFY_JS} --no-check-certificate --timeout=600
 
 mkdir ${FIS_POSTPROCESSOR_JSWRAPPER_DIR}
 cd ${FIS_POSTPROCESSOR_JSWRAPPER_DIR}
-wget ${FIS_POSTPROCESSOR_JSWRAPPER} --no-check-certificate
+wget ${FIS_POSTPROCESSOR_JSWRAPPER} --no-check-certificate --timeout=600
 
 mkdir ${FIS_PACKAGER_MAP_DIR}
 cd ${FIS_PACKAGER_MAP_DIR}
-wget ${FIS_PACKAGER_MAP} --no-check-certificate
+wget ${FIS_PACKAGER_MAP} --no-check-certificate --timeout=600
 
 mkdir ${FIS_OPTIMIZER_PNG_COMPRESSOR_DIR}
 cd ${FIS_OPTIMIZER_PNG_COMPRESSOR_DIR}
-wget ${FIS_OPTIMIZER_PNG_COMPRESSOR} --no-check-certificate
+wget ${FIS_OPTIMIZER_PNG_COMPRESSOR} --no-check-certificate --timeout=600
 
 mkdir ${CI_TEST_DIR}
 cd ${CI_TEST_DIR}
-wget ${CI_TEST} --no-check-certificate
+wget ${CI_TEST} --no-check-certificate --timeout=600
