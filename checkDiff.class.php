@@ -10,7 +10,6 @@
     $config = array(
         'fis' => 'http://registry.npmjs.org/fis',
         'fis-kernel' => 'http://registry.npmjs.org/fis-kernel',
-        'fis-command-install' => 'http://registry.npmjs.org/fis-command-install',
         'ci-test' => 'https://github.com/xiangshouding/ci-test'
     );
     #two dimensional array
