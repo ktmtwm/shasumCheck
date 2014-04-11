@@ -20,7 +20,7 @@
         'fis-postprocessor-jswrapper' => 'http://registry.npmjs.org/fis-postprocessor-jswrapper',
         'fis-packager-map' => 'http://registry.npmjs.org/fis-packager-map',
         'fis-optimizer-png-compressor' => 'http://registry.npmjs.org/fis-optimizer-png-compressor',
-        'ci-test' => 'https://registry.npmjs.org/ci-test'
+        'ci-test' => 'http://registry.npmjs.org/ci-test'
     );
     #two dimensional array
     $repos = array();
